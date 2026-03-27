@@ -1,7 +1,6 @@
 // ========== pump_device.c ==========
 #include <stdlib.h>
 #include <stdio.h>
-#include "hcf_device.h"
 #include "pump_driver.h"
 #include "pump_device.h"
 #include "stm32_pump_hal.h"

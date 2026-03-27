@@ -35,9 +35,4 @@ typedef struct device_socket_s {
     void *private_data;
 } device_socket_t;
 
-bool hcf_register_device(device_socket_t *device);
-void hcf_init(void);
-void hcf_process(void);
-bool hcf_send_command(uint8_t device_id, device_cmd_t *cmd);
-
 #endif // HCF_DEVICE_H
