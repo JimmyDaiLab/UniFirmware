@@ -1,5 +1,5 @@
 // ========== stm32_pump_hal.c ==========
-#include "pump_driver.h"
+#include "stm32_pump_hal.h"
 #include <stdio.h>  // for printf in simulation
 
 static void stm32_set_pwm(uint8_t id, uint16_t duty) {

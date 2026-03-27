@@ -6,13 +6,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-
-// Abstract HAL interface (platform-independent)
-typedef struct {
-    void (*set_pwm)(uint8_t id, uint16_t duty);
-    void (*set_dir)(uint8_t id, uint8_t dir);
-    uint32_t (*get_tick)(void);
-} pump_hal_t;
+#include "pump_hal.h"
 
 typedef enum {
     CMD_NONE,
