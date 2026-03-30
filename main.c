@@ -21,6 +21,15 @@ int main(void)
 
     modbus_comm_init();
 
+    device_cmd_t cmd = { .type = LED_CMD_TURN_ON, .param1 = 128, .param2 = 0 };
+    hcf_send_command(0, &cmd);
+
+    cmd.type = LED_CMD_BRIGHTNESS;
+    cmd.param1 = 500;
+    cmd.param2 = 0;
+    hcf_send_command(0, &cmd);
+
+
     while (1) {
         modbus_comm_poll();
         hcf_process();
